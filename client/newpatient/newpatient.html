@@ -1,0 +1,38 @@
+<template name="newpatient">
+      
+      <!--the form filled-->
+  {{#autoForm collection="Newpatient" id="add-details-form" type="insert"}}
+          <div class="newpatient_name_container">
+              {{> afQuickField name="name"}}
+          </div>
+          
+        
+          <div class="newpatient_email_container">
+                {{> afQuickField name='email'}}
+          </div>
+          
+          <div class="newpatient_location_container">
+              {{> afQuickField name='location'}}
+          </div>
+          
+          <div class="newpatient_gender_container">
+               {{> afQuickField name='gender'}}
+          </div>
+          
+            <div class="newpatient_tel_container">
+                {{> afQuickField name='tel'}}
+           </div>
+        
+             {{> afQuickField name='remarks'}}
+          
+           
+          
+          <div class="newpatientsubmit_container">
+              <button class="btn waves-effect waves-light newpatientsubmit red accent-4" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+              </button>      
+          </div>
+        
+          
+  {{/autoForm}}
+</template>
